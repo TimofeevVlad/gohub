@@ -6,8 +6,13 @@
 .container {
   max-width: 1234px;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+}
+
+@media (max-width: 1300px) {
+  .container .container {
+    padding: 0 15px;
+  }
 }
 
 @font-face {
@@ -64,6 +69,12 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 1200px) {
+  body {
+    background-size: contain;
+  }
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,23 +89,28 @@ body {
 }
 
 .navbar__logo {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .menu {
-  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 440px;
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,6 +120,12 @@ body {
   font-family: 'Brown Bold', sans-serif;
   font-size: 19px;
   color: #32325d;
+}
+
+@media (max-width: 768px) {
+  .menu__list {
+    display: none;
+  }
 }
 
 .hero {
@@ -137,5 +159,22 @@ body {
 .hero__link {
   font-size: 19px;
   color: #32325d;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .hero__title {
+    font-size: 36px;
+  }
+  .hero__description {
+    font-size: 19px;
+  }
+  .hero__link {
+    display: block;
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
