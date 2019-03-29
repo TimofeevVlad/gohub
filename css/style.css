@@ -56,6 +56,14 @@ body {
   font-size: 19px;
 }
 
+.button_textsize_normal {
+  font-size: 15px;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,8 +101,40 @@ body {
 }
 
 .menu__link {
-  text-decoration: none;
   font-family: 'Brown Bold', sans-serif;
+  font-size: 19px;
+  color: #32325d;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 140px;
+}
+
+.hero-wrap {
+  max-width: 470px;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-family: 'Brown Bold', sans-serif;
+  color: #32325d;
+  margin-bottom: 50px;
+}
+
+.hero__description {
+  font-family: 'Brown Light', sans-serif;
+  font-size: 23px;
+  color: #525f7f;
+  margin-bottom: 50px;
+}
+
+.hero__button {
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.hero__link {
   font-size: 19px;
   color: #32325d;
 }
