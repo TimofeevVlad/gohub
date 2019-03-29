@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACD,UAAU,EAAE,UAAU;CAAG;;AAE1B,AAAA,UAAU,CAAC;EACV,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_grid.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
