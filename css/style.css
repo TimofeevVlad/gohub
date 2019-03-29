@@ -4,7 +4,98 @@
 }
 
 .container {
-  width: 1234px;
+  max-width: 1234px;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@font-face {
+  font-family: 'Brown Light';
+  src: url("../fonts/Brown-Light.eot");
+  src: url("../fonts/Brown-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Brown-Light.woff") format("woff"), url("../fonts/Brown-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brown Regular';
+  src: url("../fonts/Brown-Regular.eot");
+  src: url("../fonts/Brown-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Brown-Regular.woff") format("woff"), url("../fonts/Brown-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brown Bold';
+  src: url("../fonts/Brown-Bold.eot");
+  src: url("../fonts/Brown-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Brown-Bold.woff") format("woff"), url("../fonts/Brown-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Brown Light', sans-serif;
+  background: #fff url("../img/body_header.png") top center no-repeat;
+  background-size: cover;
+}
+
+.button {
+  padding: 10px 25px 15px;
+  border-radius: 3px;
+  background-color: #845cff;
+  -webkit-box-shadow: -6.691px 7.431px 20px 0px rgba(132, 92, 255, 0.2);
+          box-shadow: -6.691px 7.431px 20px 0px rgba(132, 92, 255, 0.2);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  font-family: 'Brown Bold', sans-serif;
+}
+
+.button_textsize_big {
+  font-size: 19px;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 140px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__logo {
+  margin-right: 30px;
+}
+
+.menu {
+  width: 600px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-family: 'Brown Bold', sans-serif;
+  font-size: 19px;
+  color: #32325d;
 }
 /*# sourceMappingURL=style.css.map */
