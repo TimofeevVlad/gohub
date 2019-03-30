@@ -1,0 +1,63 @@
+.feature
+	+light
+	&-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding-bottom: 60px
+	&-heading
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		margin-bottom: 40px
+		&__title
+			font-size: 48px
+			color: $text-color
+			margin-bottom: 10px
+		&__description
+			font-size: 23px
+			color: $text-color-light
+	&-item, &-heading
+		max-width: 540px
+		height: 480px
+	&-item
+		padding: 80px 70px 60px 55px
+		background-color: #fff
+		border-radius: 10px
+		box-shadow: -6.691px 7.431px 20px 0px rgba(212, 212, 250, 0.2)
+		&__title
+			font-size: 30px
+			color: $text-color
+			margin-top: 50px
+		&__description
+			font-size: 18px
+			color: $text-color-light
+
+@media (max-width: 1200px)
+	.feature
+		&-item, &-heading
+			flex: 1 1 400px
+		&-heading
+			padding: 20px
+@media (max-width: 840px)
+	.feature
+		&-item, &-heading
+			max-width: 100%
+		&-item
+			margin-top: 30px
+		&-heading
+			height: 300px
+			justify-content: center
+
+@media (max-width: 480px)
+	.feature
+		&-item
+			padding: 20px 35px 35px
+		&-heading
+			&__title
+				font-size: 36px
+			&__description
+				font-size: 18px
+
+
+
