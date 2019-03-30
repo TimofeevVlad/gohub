@@ -291,4 +291,74 @@ body {
     font-size: 18px;
   }
 }
+
+.services {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services-wrap {
+  padding: 60px 0;
+}
+
+.services-heading {
+  font-family: 'Brown Light', sans-serif;
+}
+
+.services-heading__title {
+  font-size: 48px;
+  color: #32325d;
+}
+
+.services-heading__description {
+  font-size: 23px;
+  color: #525f7f;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.services__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 270px;
+          flex: 1 1 270px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.services__title {
+  font-size: 20px;
+  font-family: 'Brown Regular', sans-serif;
+  color: #32325d;
+}
+
+.services__description {
+  font-size: 16px;
+  font-family: 'Brown Light', sans-serif;
+  color: #525f7f;
+}
 /*# sourceMappingURL=style.css.map */
