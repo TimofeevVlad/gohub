@@ -2,7 +2,7 @@
   &-wrap
     display: flex
     align-items: center
-    min-height: 140px
+    height: 140px
     justify-content: space-between
   &__logo
     margin-right: 20px
@@ -21,6 +21,12 @@
     +bold
     font-size: 19px
     color: $text-color
+
+@media (max-width: 1200px)
+  .navbar
+    &-wrap
+      height: 80px
+
 @media (max-width: 768px)
   .menu
     &__list
