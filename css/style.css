@@ -42,6 +42,8 @@
 body {
   font-family: 'Brown Light', sans-serif;
   background: #fff url("../img/body_header.png") top center no-repeat;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .button {
@@ -563,6 +565,122 @@ body {
   .wedo__link {
     display: block;
     margin-top: 30px;
+  }
+}
+
+.feedback {
+  background-color: #fafaff;
+}
+
+.feedback-wrap {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback-heading {
+  background: url("../img/feedback_icons.png") left 2px top 10px no-repeat;
+}
+
+.feedback-heading__title, .feedback-heading__description {
+  font-family: 'Brown Light', sans-serif;
+  color: #32325d;
+}
+
+.feedback-heading__title {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.feedback-heading__description {
+  font-size: 23px;
+}
+
+.feedback-form {
+  max-width: 550px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 550px;
+          flex: 1 1 550px;
+  position: relative;
+}
+
+.feedback-form__input {
+  width: 100%;
+  padding: 30px 50px 30px 40px;
+  border: none;
+  border-radius: 5px;
+  color: #32325d;
+  outline-color: #525f7f;
+  font-family: 'Brown Light', sans-serif;
+  font-size: 23px;
+}
+
+.feedback-form__input::-webkit-input-placeholder {
+  font-size: 23px;
+  font-family: 'Brown Light', sans-serif;
+  color: #525f7f;
+}
+
+.feedback-form__input:-ms-input-placeholder {
+  font-size: 23px;
+  font-family: 'Brown Light', sans-serif;
+  color: #525f7f;
+}
+
+.feedback-form__input::-ms-input-placeholder {
+  font-size: 23px;
+  font-family: 'Brown Light', sans-serif;
+  color: #525f7f;
+}
+
+.feedback-form__input::placeholder {
+  font-size: 23px;
+  font-family: 'Brown Light', sans-serif;
+  color: #525f7f;
+}
+
+.feedback-form__link {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #845cff;
+  font-family: 'Brown Bold', sans-serif;
+  text-decoration: none;
+}
+
+.feedback-form__link::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  width: 20px;
+  height: 17px;
+  background: url("../img/submit.png") center center no-repeat;
+}
+
+@media (max-width: 480px) {
+  .feedback-heading__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .feedback-heading__description {
+    font-size: 19px;
+  }
+  .feedback-form__link {
+    visibility: hidden;
+  }
+  .feedback-form__link::after {
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=style.css.map */
