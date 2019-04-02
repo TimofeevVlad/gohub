@@ -374,6 +374,12 @@ body {
   color: #525f7f;
 }
 
+@media (max-width: 768px) {
+  .services {
+    padding-bottom: 0;
+  }
+}
+
 .wedo {
   background: url("../img/finances.png") bottom 500px right no-repeat;
 }
@@ -557,6 +563,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .wedo-wrap {
+    padding-top: 0;
+  }
   .wedo-safety__title, .wedo-move__title, .wedo-finances__title {
     font-family: 'Brown Light', sans-serif;
     font-size: 36px;
